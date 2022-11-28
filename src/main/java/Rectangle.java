@@ -3,11 +3,14 @@ public class Rectangle {
     private int height;
 
     public Rectangle(int width, int height){
+        if (width <= 0 || height <= 0) {
+            throw new RuntimeException("ابعاد مستطیل باید اعداد صحیح مثبت باشند.");
+        }
         this.width = width;
         this.height = height;
     }
 
-    public int computeArea(){
+    public int computeArea() {
         return getWidth() * getHeight();
     }
 
