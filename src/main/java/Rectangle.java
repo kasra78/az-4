@@ -15,12 +15,12 @@ public class Rectangle {
         return width;
     }
 
-    public int getHeight() {
-        return height;
-    }
-
     public void setWidth(int width) {
         this.width = width;
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     public void setHeight(int height) {
